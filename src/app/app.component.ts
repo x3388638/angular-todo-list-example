@@ -18,4 +18,8 @@ export class AppComponent {
 	handleAddTask(taskName) {
 		console.log(taskName)
 	}
+
+	onToggleStatus(index) {
+		this.taskList[index].done = !this.taskList[index].done;
+	}
 }
