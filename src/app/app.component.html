@@ -1,6 +1,6 @@
 <div id="myDIV" class="header">
 	<h2 style="margin:5px">My To Do List</h2>
-	<app-input-bar></app-input-bar>
+	<app-input-bar (onAdd)="handleAddTask($event)"></app-input-bar>
 </div>
 
 <ul id="myUL">

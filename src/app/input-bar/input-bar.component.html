@@ -1,2 +1,2 @@
-<input type="text" id="myInput" placeholder="Title...">
-<span onclick="newElement()" class="addBtn">Add</span>
+<input [(ngModel)]="taskName" type="text" placeholder="Title..." />
+<span (click)="handleAddTask(taskName)" class="addBtn">Add</span>
