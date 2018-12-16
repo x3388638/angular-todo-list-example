@@ -16,7 +16,10 @@ export class AppComponent {
 		{ name: 'Organize office', done: false },
 	];
 	handleAddTask(taskName) {
-		console.log(taskName)
+		this.taskList.push({
+			name: taskName,
+			done: false
+		});
 	}
 
 	onToggleStatus(index) {
