@@ -22,4 +22,8 @@ export class AppComponent {
 	onToggleStatus(index) {
 		this.taskList[index].done = !this.taskList[index].done;
 	}
+
+	onDel(index) {
+		this.taskList = [...this.taskList.slice(0, index), ...this.taskList.slice(index + 1, this.taskList.length)]
+	}
 }

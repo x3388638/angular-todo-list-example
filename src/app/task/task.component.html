@@ -1,1 +1,1 @@
-<li [class.checked]="task.done" (click)="toggleStatus(taskIndex)">{{ task.name }}<span class="close">&times;</span></li>
+<li [class.checked]="task.done" (click)="toggleStatus(taskIndex)">{{ task.name }}<span class="close" (click)="handleDel($event, taskIndex)">&times;</span></li>

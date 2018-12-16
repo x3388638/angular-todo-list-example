@@ -10,6 +10,7 @@ export class TaskComponent implements OnInit {
 	@Input() task: Task;
 	@Input() taskIndex;
 	@Output() toggleEvent = new EventEmitter<any>();
+	@Output() delEvent = new EventEmitter<any>();
 	constructor() { }
 
 	ngOnInit() {
@@ -19,4 +20,8 @@ export class TaskComponent implements OnInit {
 		this.toggleEvent.emit(i);
 	}
 
+	handleDel(e, i) {
+		e.stopPropagation();
+		this.delEvent.emit(i)
+	}
 }

@@ -9,6 +9,7 @@ import Task from '../Task';
 export class TaskListComponent implements OnInit {
 	@Input() taskList: Task[];
 	@Output() toggleEvent = new EventEmitter<any>();
+	@Output() delEvent = new EventEmitter<any>();
 	constructor() { }
 
 	ngOnInit() {
@@ -16,5 +17,9 @@ export class TaskListComponent implements OnInit {
 
 	onToggle(index) {
 		this.toggleEvent.emit(index);
+	}
+
+	onDel(index) {
+		this.delEvent.emit(index);
 	}
 }
