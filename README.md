@@ -1,5 +1,6 @@
 # NgTodoExample
-Just an Angular TODO list for [w3school TODO list example](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo)  
+Just an Angular TODO list for [w3schools TODO list example](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo)  
+Demo: https://ng-todo-example-96sjt1vhn.now.sh/  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
 ## Development server
