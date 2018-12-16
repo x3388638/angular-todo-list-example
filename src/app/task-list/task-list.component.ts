@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import Task from '../Task';
 
 @Component({
@@ -6,14 +6,10 @@ import Task from '../Task';
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
-export class TaskListComponent implements OnInit {
+export class TaskListComponent {
 	@Input() taskList: Task[];
 	@Output() toggleEvent = new EventEmitter<any>();
 	@Output() delEvent = new EventEmitter<any>();
-	constructor() { }
-
-	ngOnInit() {
-	}
 
 	onToggle(index) {
 		this.toggleEvent.emit(index);

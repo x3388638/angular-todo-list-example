@@ -15,6 +15,7 @@ export class AppComponent {
 		{ name: 'Read a book', done: false },
 		{ name: 'Organize office', done: false },
 	];
+
 	handleAddTask(taskName) {
 		this.taskList.push({
 			name: taskName,
