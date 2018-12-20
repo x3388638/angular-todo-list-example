@@ -12,6 +12,7 @@ export class InputBarComponent {
 	handleAddTask(taskName) {
 		if (taskName !== undefined && taskName.trim() !== '') {
 			this.onAdd.emit(taskName);
+			this.taskName = '';
 		}
 	}
 }
