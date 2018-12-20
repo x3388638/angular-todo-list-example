@@ -10,7 +10,7 @@ export class InputBarComponent {
 	@Output() onAdd = new EventEmitter<any>();
 
 	handleAddTask(taskName) {
-		if (taskName !== undefined) {
+		if (taskName !== undefined && taskName.trim() !== '') {
 			this.onAdd.emit(taskName);
 		}
 	}
